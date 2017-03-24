@@ -69,7 +69,7 @@
           var tweet = streams.home[index];
           var $tweet = $('<div></div>');
           var $button = $('<button> This is a Button</button>')
-          $tweet.text('@' + tweet.user + ': ' + tweet.message );
+          $tweet.text('@' + tweet.user + ': ' + tweet.message + " tweeted at: " + (tweet.created_at - 3000) +" seconds!" );
           $button
           
 
